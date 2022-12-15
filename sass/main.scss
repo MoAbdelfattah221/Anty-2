@@ -89,3 +89,15 @@
     text-decoration: none;
     color:#000;
 }
+// Statistics
+.statistics{
+    padding-top: #{$padding};
+    padding-bottom: #{$padding};
+    img{
+        width: 70px;
+    }
+    span{
+        font-size: 50px;
+        color: #{$main_color};
+    }
+}
