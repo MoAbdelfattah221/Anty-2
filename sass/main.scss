@@ -58,3 +58,34 @@
         }
     }
 }
+//about us section
+.About{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 70px;
+} 
+.container .p1{
+    color: #EF395D;
+    font-size: 20px;
+}
+.container .p2{
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+} 
+ .About .container i{
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #EF395D;
+    @media (max-width: 767px) {
+       &{
+        margin: 20px 0 !important;
+       } 
+    }
+} 
+ .About .container a{
+    text-decoration: none;
+    color:#000;
+}
