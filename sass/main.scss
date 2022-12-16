@@ -59,85 +59,77 @@
     }
 }
 //about us section
-.About{
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-bottom: 70px;
-} 
-.container .p1{
-    color: #EF395D;
-    font-size: 20px;
-}
-.container .p2{
-    color: #000;
-    font-size: 35px;
-    font-weight: bold;
-} 
- .About .container i{
-    margin-left: 40px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-    font-size: 30px;
-    color: #EF395D;
-    @media (max-width: 767px) {
-       &{
-        margin: 20px 0 !important;
-       } 
+.about{
+    padding-top: #{$padding};
+    padding-bottom: #{$padding};
+    .container{
+        p{
+            color: #{$main_color};
+            font-size: 20px;
+        }
+        i{
+            font-size: 30px;
+            color: #{$main_color};
+        }
+        i.arrow{
+            font-size: 20px;
+        }
     }
+
 } 
- .About .container a{
-    text-decoration: none;
-    color:#000;
-}
 //Tracks 
 .tracks{
     padding-bottom: #{$padding};
-}
- .tracks .container .row div{
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-    &::before{
-        content:"";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        background-color: rgb(0 0 0 / 50%);
-        display: none; 
-        transition-duration: 0.5s;
+    .container{
+        p{
+            color: #{$main_color};
+            font-size: 20px;
+        }
+        .row{
+            div{
+                &.img-1{
+                    background-image: url(../images/img2.png); 
+                }
+                &.img-2{
+                    background-image: url(../images/img1.png); 
+                }
+                &.img-3{
+                    background-image: url(../images/img3.png); 
+                }
+                &.img-4{
+                    background-image: url(../images/img4.png); 
+                }
+                &.img-5{
+                    background-image: url(../images/img5.png); 
+                }
+                background-position: center;
+                background-size: cover;
+                height: 300px;
+                &::before{
+                    content:"";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: rgb(0 0 0 / 50%);
+                    display: none; 
+                    transition-duration: 0.5s;
+                }
+                span{
+                    font-size: 30px;
+                    display: none;
+                    transition-duration: 0.5s;
+                }
+                &:hover::before{
+                    display: block;
+                }
+                &:hover span{
+                    display: block;
+                }
+            }
+        }
     }
-    span{
-        font-size: 30px;
-        display: none;
-       transition-duration: 0.5s;
-    }
-    &:hover::before{
-        display: block;
-    }
-    &:hover span{
-        display: block;
-    }
-}
- .img-1{
-    background-image: url(../images/img2.png); 
-}
-.img-2{
-    background-image: url(../images/img1.png); 
-    
-}
-.img-3{
-    background-image: url(../images/img3.png); 
-    
-}
-.img-4{
-    background-image: url(../images/img4.png); 
-    
-}
-.img-5{
-    background-image: url(../images/img5.png); 
-    
 }
 // Statistics
 .statistics{
