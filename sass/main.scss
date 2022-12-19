@@ -63,7 +63,7 @@
     padding-top: #{$padding};
     padding-bottom: #{$padding};
     .container{
-        p{
+        h6{
             color: #{$main_color};
             font-size: 20px;
         }
@@ -75,13 +75,12 @@
             font-size: 20px;
         }
     }
-
 } 
 //Tracks 
 .tracks{
     padding-bottom: #{$padding};
     .container{
-        p{
+        h6{
             color: #{$main_color};
             font-size: 20px;
         }
@@ -141,5 +140,91 @@
     span{
         font-size: 50px;
         color: #{$main_color};
+    }
+}
+// Portfolio Section
+.portfolio{
+    padding-top: #{$padding};
+    padding-bottom: #{$padding};
+    .container{
+        h6{
+            color: #{$main_color};
+            font-size: 20px;
+        }
+        .row{
+            div{
+                .box{
+                    @media (max-width: 767px) {
+                        &{
+                            text-align: center;
+                        }
+                    }
+                    img{
+                        height: 240px;
+                    }
+                }
+            }
+        }
+    }
+} 
+// Testimonials Section
+.testimonials{
+    padding-top: #{$padding};
+    padding-bottom: #{$padding};
+    .container{
+        h6{
+            color: #{$main_color};
+            font-size: 20px;
+        }
+        .box{
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+            p:first-child{
+                font-size: 13px;
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                background-color: #{$main_color};
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+            }
+            .content{
+                p,span{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+// Contact
+.contact{
+    padding-bottom: #{$padding};
+    .container{
+        .content{
+            form{
+                position: relative;
+                width: fit-content;
+                margin: auto;
+                input{
+                    outline: none;
+                    width: 280px;
+                    &::placeholder{
+                        font-size: 12px;
+                    }
+                }
+                button{
+                    outline: none;
+                    border: none;
+                    background-color: #{$main_color};
+                    position: absolute;
+                    right: 0;
+                    border-top-left-radius: 0 !important;
+                    border-bottom-left-radius: 0 !important;
+                }
+            }
+        }
     }
 }
