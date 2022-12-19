@@ -22,8 +22,16 @@ a {
   left: 0 !important;
 }
 
+@media (max-width: 991px) {
+  br {
+    display: none;
+  }
+}
 .header-one {
   background-color: #EF395D !important;
+}
+.header-one .container .contact {
+  padding: 0 !important;
 }
 .header-one .container .contact a {
   font-size: 13px;
@@ -88,6 +96,41 @@ a {
   }
 }
 
+footer {
+  background-color: #130581;
+  padding-top: 26.6666666667px;
+  padding-bottom: 26.6666666667px;
+}
+@media (max-width: 991px) {
+  footer .container .row {
+    text-align: center;
+  }
+}
+footer .container .row div img {
+  width: 90px;
+}
+footer .container .row div p {
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  footer .container .row div .icons {
+    justify-content: center !important;
+  }
+}
+footer .container .row div .icons div {
+  width: 30px;
+  height: 30px;
+  background-color: #EF395D !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+footer .container .row ul li {
+  font-size: 13px;
+}
+
 .landing {
   background-color: #f2f2f2;
 }
@@ -135,7 +178,7 @@ a {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-.about .container p {
+.about .container h6 {
   color: #EF395D !important;
   font-size: 20px;
 }
@@ -150,7 +193,7 @@ a {
 .tracks {
   padding-bottom: 80px;
 }
-.tracks .container p {
+.tracks .container h6 {
   color: #EF395D !important;
   font-size: 20px;
 }
@@ -207,4 +250,82 @@ a {
 .statistics span {
   font-size: 50px;
   color: #EF395D !important;
+}
+
+.portfolio {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.portfolio .container h6 {
+  color: #EF395D !important;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .portfolio .container .row div .box {
+    text-align: center;
+  }
+}
+.portfolio .container .row div .box img {
+  height: 240px;
+}
+
+.testimonials {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.testimonials .container h6 {
+  color: #EF395D !important;
+  font-size: 20px;
+}
+.testimonials .container .box {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.testimonials .container .box p:first-child {
+  font-size: 13px;
+}
+.testimonials .container .box img {
+  width: 40px;
+  height: 40px;
+  background-color: #EF395D !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.testimonials .container .box .content p, .testimonials .container .box .content span {
+  font-size: 13px;
+}
+
+.contact {
+  padding-bottom: 80px;
+}
+.contact .container .content form {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.contact .container .content form input {
+  outline: none;
+  width: 280px;
+}
+.contact .container .content form input::-moz-placeholder {
+  font-size: 12px;
+}
+.contact .container .content form input:-ms-input-placeholder {
+  font-size: 12px;
+}
+.contact .container .content form input::placeholder {
+  font-size: 12px;
+}
+.contact .container .content form button {
+  outline: none;
+  border: none;
+  background-color: #EF395D !important;
+  position: absolute;
+  right: 0;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
 }/*# sourceMappingURL=main.css.map */
