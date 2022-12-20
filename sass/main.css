@@ -97,9 +97,8 @@ a {
 }
 
 footer {
-  background-color: #130581;
+  background-color: #050124;
   padding-top: 26.6666666667px;
-  padding-bottom: 26.6666666667px;
 }
 @media (max-width: 991px) {
   footer .container .row {
@@ -129,6 +128,10 @@ footer .container .row div .icons div {
 }
 footer .container .row ul li {
   font-size: 13px;
+}
+footer .copy {
+  background-color: #EF395D !important;
+  font-size: 12px;
 }
 
 .landing {
@@ -168,6 +171,7 @@ footer .container .row ul li {
 }
 
 .slider {
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 .slider .swiper .swiper-wrapper .swiper-slide img {
@@ -191,6 +195,7 @@ footer .container .row ul li {
 }
 
 .tracks {
+  padding-top: 80px;
   padding-bottom: 80px;
 }
 .tracks .container h6 {
@@ -228,16 +233,30 @@ footer .container .row ul li {
   display: none;
   transition-duration: 0.5s;
 }
+@media (max-width: 991px) {
+  .tracks .container .row div::before {
+    display: block !important;
+  }
+}
 .tracks .container .row div span {
   font-size: 30px;
   display: none;
-  transition-duration: 0.5s;
+}
+@media (max-width: 991px) {
+  .tracks .container .row div span {
+    display: block !important;
+  }
 }
 .tracks .container .row div:hover::before {
   display: block;
 }
 .tracks .container .row div:hover span {
   display: block;
+}
+@media (max-width: 991px) {
+  .tracks .container .row div {
+    margin-bottom: 15px !important;
+  }
 }
 
 .statistics {
@@ -254,7 +273,6 @@ footer .container .row ul li {
 
 .portfolio {
   padding-top: 80px;
-  padding-bottom: 80px;
 }
 .portfolio .container h6 {
   color: #EF395D !important;
