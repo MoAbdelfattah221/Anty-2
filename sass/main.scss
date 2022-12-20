@@ -47,6 +47,7 @@
 }
 // Slider
 .slider{
+    padding-top: #{$padding};
     padding-bottom: #{$padding};
     .swiper{
         .swiper-wrapper{
@@ -78,6 +79,7 @@
 } 
 //Tracks 
 .tracks{
+    padding-top: #{$padding};
     padding-bottom: #{$padding};
     .container{
         h6{
@@ -114,17 +116,31 @@
                     background-color: rgb(0 0 0 / 50%);
                     display: none; 
                     transition-duration: 0.5s;
+                    @media (max-width: 991px) {
+                        &{
+                            display: block !important;
+                        }
+                    }
                 }
                 span{
                     font-size: 30px;
                     display: none;
-                    transition-duration: 0.5s;
+                    @media (max-width: 991px) {
+                        &{
+                            display: block !important;
+                        }
+                    }
                 }
                 &:hover::before{
                     display: block;
                 }
                 &:hover span{
                     display: block;
+                }
+                @media (max-width: 991px) {
+                    &{
+                        margin-bottom: 15px !important;
+                    }
                 }
             }
         }
@@ -145,7 +161,6 @@
 // Portfolio Section
 .portfolio{
     padding-top: #{$padding};
-    padding-bottom: #{$padding};
     .container{
         h6{
             color: #{$main_color};
